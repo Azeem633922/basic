@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- containers in html -->
+    <!-- 1. Block Level containers : These typeof containers takes up all the width of the parent element and move on to the next line 
+        eg. div,section,aside,article,navetc
+        2.in line containers : These type of containers create inline elements these inline elements do not takes
+        the full width rather takes space according to the content
+        eg. span , em , button a etc
+        3.Generic containers -->
+    <table>
+      <thead>
+        table
+      </thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>mobile</th>
+        <th>ddh</th>
+      </tr>
+      <tr>
+        <td>jshfdshfh</td>
+        <td>kjdhfkdshfh</td>
+        <td>jshfdshfh</td>
+        <td>kjdhfkdshfh</td>
+      </tr>
+      <tr>
+        <td rowspan="2">jshfdshfh</td>
+        <td>kjdhfkdshfh</td>
+        <td>jshfdshfh</td>
+        <td>kjdhfkdshfh</td>
+      </tr>
+      <tr>
+        <td>jshfdshfh</td>
+        <td>kjdhfkdshfh</td>
+        <td>jshfdshfh</td>
+        <td>kjdhfkdshfh</td>
+      </tr>
+      <tfoot>
+        <tr>
+          <td colspan="2">Sign</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- input tags-->
+    <input type="text" />
+    <input type="submit" />
+    <input type="password" />
+    <input type="radio" />
+    <input type="checkbox" />
+    <input type="button" value="button" />
+    <input type="color" />
+    <input type="range" min="0" max="120" step="3" />
+    <input type="date" /><br /><br />
+    <input type="file" name="userphoto" capture="user" />
+    <input type="month" />
+    <input type="time" /><input type="datetime-local" />
+    <input type="datetime" /> <br /><br /><br />
+    <form
+      action="/a.txt"
+      method="get"
+      enctype="multipart/form-data"
+      id="form1"
+      target="_blank"
+      autocomplete="on"
+    >
+      <label for="email">Enter you Email id</label>
+      <input
+        type="text"
+        name="email"
+        placeholder="Email"
+        id="email"
+      /><br /><br />
+      <label for="password">Enter your password</label>
+      <input
+        type="password"
+        name="pwd"
+        placeholder="password"
+        id="pwd"
+      /><br /><br /><br />
+      <input type="submit" value="Sign in" onclick="alert('submitted')" />
+
+      <fieldset>
+        <legend>SignUp</legend>
+        <input type="text" name="email" placeholder="email" id="em" />
+        <br /><br /><input
+          type="password"
+          name="psw"
+          id="psw"
+          placeholder="password"
+        /><br /><br /><br />
+        <datalist id="mylist">
+          <option value="india">india</option>
+          <option value="america">america</option>
+          <option value="australia">australia</option>
+          <option value="china">china</option>
+          <option value="bangladesh">bangladesh</option>
+        </datalist><br /><br /><br />
+        <textarea
+          name="txtarea"
+          id="txtarea"
+          cols="30"
+          rows="10"
+          style="width: 200px; height: 100px"
+        ></textarea>
+        <br /><br />
+        <button type="submit">signup</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
